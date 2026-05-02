@@ -1,9 +1,10 @@
-
+//Random Password Generator in javaScript
 const length = 12;
 const sChars = true;
 const cChars = true;
 const nums = true;
 const syms = true;
+
 function generatePassword(length, sChars, cChars, nums, syms) {
     
     const passwordLength = 15;
@@ -27,12 +28,9 @@ function generatePassword(length, sChars, cChars, nums, syms) {
     let randomChar = "";
     for (let i = 0; i < length; i++) {
         let randomIndex = Math.floor(Math.random() * characterPool.length);
-        
         randomChar += characterPool[randomIndex];
-        
-        
-
+        }
+console.log(randomChar);
 }
-console.log(randomChar);}
 
 generatePassword(length, sChars, cChars, nums, syms);
